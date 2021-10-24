@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <script>  
+      function msg1(){ 
+      alert("SEJA BEM VINDO!"); 
+      } 
+       
+      window.addEventListener("load",msg1); 
+      
+            // Uma função
+            function pergunta1() {
+              // Checa se quiser enviar no diálogo
+              if (confirm("Deseja enviar agora?")) 
+              {
+                return true;
+              }
+              // Senão
+              else 
+              {
+                return false;
+              }
+            }
+      
+            // Uma função para informar de limpar
+            function pergunta2() {
+              alert("Todos os campos serão apagados.");
+            } 
+      </script> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="autor" content="Vagner Pereira de Almeida">
+    <title>Site para cadastro</title>
+</head>
+<body>
+
+  <h1>Olá, seja bem vindo ao site de cadastro!</h1>
+    
+    <div>
+        Leia as informações a seguir, e preencha os campos com os dados abaixo.
+    </div>
+          
+    <form action="sucesso.html" method="post">
+    
+        <div>
+            <fieldset>
+              <legend>Dados pessoais</legend>
+              <div>
+    
+            <label for="name">Nome completo:</label>
+            <input type="text" name="nome completo" id="nome completo" required>
+    </div>
+    
+            <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail"/>
+        </div>
+    
+    <div>
+    <label for="cpf">CPF:</label>
+    <input type="text" name="cpf" maxlength="11" placeholder="cpf:" id="cpf" required>
+    </div>          
+
+    <div>
+      <label for="rg">RG:</label>
+        <input type="text" name="rg" maxlength="13" id="rg">
+  </div>    
+    
+    <div>
+            <label for="Telephone fixo ou celular">Telephone fixo ou celular:</label>
+            <input type="telephone fixo ou celular" id="telephone fixo ou celular" required>
+        </div>    
+            
+        <div>
+              <label for="data">Data de nascimento:</label>
+              <input type="date" name="data" id="data">
+        </fieldset>
+            </div>    
+    
+        <div>
+            <fieldset>
+              <legend>Sexo</legend>
+    
+              <label for="sf">Feminino</label>
+              <input type="radio" name="sexo" id="sf" value="f">
+              <br>
+    
+              <label for="sm">Masculino</label>
+              <input type="radio" name="sexo" id="sm" value="m">
+            </fieldset> 
+    <br>
+        </div>    
+    
+        <div>
+            <fieldset>              
+              <legend>Endereço</legend>
+    
+              <label for="estado">Estado:</label>
+              <select name="estado" id="estado">
+                <option>Escolha seu estado...</option>
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="am">Amazonas</option>
+                <option value="ap">Amapá</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="ro">Rondônia</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="se">Sergipe</option>
+                <option value="sp">São Paulo</option>
+                <option value="to">Tocantins</option>
+              </select> 
+    <br>
+    
+              <label for="cidade">Cidade:</label>
+              <input type="text" name="cidade" id="cidade" required> 
+    <br>
+    
+              <label for="bairro">Bairro:</label>
+              <input type="text" name="bairro" id="bairro" required> 
+    <br>
+    
+              <label for="rua">Rua:</label>
+              <input type="text" name="rua" id="rua" required> 
+    <br>
+        
+    <label for="quadra">Quadra:</label>
+    <input type="text" name="quadra" id="quadra" required> 
+<br>
+
+              <label for="número">Número:</label>
+              <input type="text" name="número" id="número" required> 
+    <br>
+    
+              <label for="cep">CEP: </label>
+              <input type="text" name="cep" maxlength="8" id="cep">
+            </fieldset>
+            <br>
+        </div>    
+    
+        <div>
+            <fieldset>
+              <legend>Logim</legend>
+    
+              <label for="email">e-mail:</label>
+              <input type="e-mail" name="email" placeholder="esample@gmail.com" id="email">
+    
+              <label for="senha">Senha:</label>
+              <input type="password" name="senha" placeholder="Mínimo 10 caracteres." id="senha">
+            <br>
+    
+              <label for="confirmsenha">Confirme a senha:</label>
+              <input type="password" name="confirmsenha" id="confirmsenha">
+            <br>
+    
+            <label for="obs">Informações adicionais:</label>
+            <textarea name="observacao" id="obs" placeholder="Digite sua mensagem:"> </textarea>
+            </fieldset>
+            <br>
+        </div>        
+
+    <div class="button">
+      <input type="submit" name="enviar" onclick="pergunta1"();" value="Enviar">
+        <input type="reset" onclick="pergunta2"();" value="Apagar">
+          </div>
+      
+    </form>
+            <br>
+    
+          </main>
+          <footer>
+          
+            <script>
+              
+              function pergunta1() {
+                if (confirm("Vocè tem certeza que quer enviar?")) 
+                {
+                  return true;
+                }
+                else 
+                {
+                  return false;
+                }
+              }
+        
+              function pergunta2() {
+                alert("Todos os dados serão apagados.");
+              }
+            </script>
+        
+</body>
+
+<br>
+©2021 Vagner Pereira de Almeida
+</html>
